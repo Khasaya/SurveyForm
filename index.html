@@ -16,20 +16,24 @@
     <!-- https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg -->
     <div class="wrapper">
         <header>
-            <h1>FreeCodeCamp Survey Form</h1>
-            <p>Thank you for taking the time to help us improve the platform</p>
+            <h1 id="title">FreeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
         </header>
 
         <main>
-            <form action="">
+            <form id="survey-form" action="">
                 <div class="f-group">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
                 </div>
 
                 <div class="f-group">
-                    <label for="mail">Email</label>
-                    <input type="text" id="mail" name="mail" placeholder="Enter your Email">
+                    <label for="mail" id="email-label">Email</label>
+                    <input type="email" id="email" name="mail" placeholder="Enter your Email" required>
+                </div>
+                <div class="f-group">
+                    <label for="number" id="number-label">Number</label>
+                    <input type="number" id="number" name="number" minlength="12" maxlength="23" placeholder="Enter your Email">
                 </div>
 
                 <div class="f-group">
@@ -40,8 +44,8 @@
                 <div class="f-group">
                     <label for="role">Which option best describes your current role?</label>
                     <select name="role" id="role">
-                        <option selected disabled>Select a current role</option>
-                        <option value="">Student</option>
+                        <option>Select a current role</option>
+                        <option value=" ">Student</option>
                         <option value="">Full Time Job</option>
                         <option value="">Full Time Learner</option>
                         <option value="">Prefer not to say</option>
@@ -113,7 +117,7 @@
                 </div>
 
                 <div class="f-group">
-                    <button type="submit">Submit</button>
+                    <button type="submit" id="button">Submit</button>
                 </div>
             </form>
         </main>
