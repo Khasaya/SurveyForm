@@ -1,0 +1,88 @@
+/* Rest CSS */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    color: white;
+    font-size: 16px;
+    background-image: url('https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg');
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.267);
+}
+
+header{
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px;
+}
+
+header h1{
+    font-weight: 400;
+    font-size: 2.1rem;
+    margin-bottom: 10px;
+}
+
+header p{
+    font-style: italic;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+main{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+form{
+    padding: 50px;
+    background-color: #292947d0;
+}
+
+.f-group:not(:last-child){
+    margin-bottom: 35px;
+}
+
+.f-group label{
+    font-size: 1.3rem;
+}
+
+.f-group input:not([type ="radio"], [type ="checkbox"]),
+.f-group select,
+.f-group textarea,
+.f-group button{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    color: #535353;
+}
+
+.f-group input:is([type ="radio"], [type ="checkbox"]){
+    zoom: 1.5;
+}
+
+.f-group textarea{
+    min-height: 100px;
+    height: 200px;
+    resize: vertical;
+}
+
+.f-group button{
+    background-color: green;
+    color: white;
+}
+
+.f-group-radio{
+    margin-top: 7px;
+}
