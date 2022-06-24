@@ -69,7 +69,7 @@ form{
 }
 
 .f-group input:is([type ="radio"], [type ="checkbox"]){
-    zoom: 1.5;
+    zoom: 2.1;
 }
 
 .f-group textarea{
